@@ -1,0 +1,20 @@
+{
+  "name": "threatcrush-defi-tvl-alert",
+  "version": "0.1.0",
+  "description": "ThreatCrush module \u2014 DeFi TVL drop alert via DeFiLlama",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "threatcrush",
+    "defi",
+    "security",
+    "tvl"
+  ],
+  "author": "nullref",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  }
+}
