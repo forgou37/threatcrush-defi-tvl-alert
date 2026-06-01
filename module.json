@@ -1,0 +1,50 @@
+{
+  "name": "defi-tvl-alert",
+  "display_name": "DeFi TVL Alert",
+  "version": "0.1.0",
+  "description": "Monitors DeFiLlama for sudden TVL drops \u2014 early-warning signal for active DeFi exploits.",
+  "author_name": "nullref",
+  "author_url": "https://github.com/forgou37",
+  "homepage_url": "https://github.com/forgou37/threatcrush-defi-tvl-alert",
+  "git_url": "https://github.com/forgou37/threatcrush-defi-tvl-alert",
+  "license": "MIT",
+  "pricing_type": "free",
+  "category": "threat-intel",
+  "tags": [
+    "defi",
+    "tvl",
+    "exploit",
+    "security",
+    "defillama"
+  ],
+  "keywords": "defi, tvl, exploit detection, defillama, smart contract, hack monitor",
+  "min_threatcrush_version": ">=0.2.0",
+  "os_support": [
+    "linux",
+    "darwin"
+  ],
+  "capabilities": [
+    "network:outbound",
+    "threat-intel:feed"
+  ],
+  "config_schema": [
+    {
+      "key": "threshold_pct",
+      "type": "number",
+      "default": 15,
+      "description": "Minimum TVL drop % to alert"
+    },
+    {
+      "key": "min_tvl_usd",
+      "type": "number",
+      "default": 1000000,
+      "description": "Ignore protocols below this TVL"
+    },
+    {
+      "key": "poll_interval_seconds",
+      "type": "number",
+      "default": 300,
+      "description": "Poll interval in seconds"
+    }
+  ]
+}
